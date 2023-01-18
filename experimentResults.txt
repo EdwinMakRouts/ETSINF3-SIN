@@ -1,0 +1,33 @@
+Resultados despues de ejecutar experiment.py - EDWIN MAKOVEEV ROUTSKAIA · 3D1
+
+Mejores Resultados de cada conjunto de datos:
+#               a          b         E    k  Ete  Ete (%)    Ite (%)
+OCR_14x14     10000.0  10000.0       0   11   14     4.7  [2.3, 7.1]
+expressions   0.1          0.1       0   50    4     6.0  [0.3, 11.6]
+gauss2D       0.1        100.0     824  200  126    10.5  [8.8, 12.2]
+gender        10000.0  10000.0       0   60   39     4.6  [3.2, 6.0]
+videos        0.1          1.0    2788  200  647    27.0  [25.2, 28.8]
+
+Comentarios
+OCR_14x14: En este caso, he seleccionado como la mejor la que tiene un alpha = 10000 y un beta = 10000, 
+    simplemente porque con un numero mayor de alpha y beta, se conigue el mejor resultado. Asimismo,
+    se puede observar que los datos son linealmente separables, ya que el programa el numero muestras
+	mal clasificadas son 0, y sus datos son convergentes.
+
+expressions: En este caso, en todas las combinaciones de alpha y beta, siempre da el mismo
+    resultado, con los mismos datos y tiene un numero de muestras erroneas = 0, por lo que se puede 
+    infeir que los datos son linealmente separables y convergentes. 
+
+gauss2D: En este caso, Independientemente de la combinacion de alpha y beta siempre hay
+    un numero de errores > 0, por lo que sus datos no son linealmente separables, y he 
+    seleccionado como la mejor la que tiene un alpha = 0.1 y un beta = 100, ya que 
+    con el menor numero de alpha y beta, conigue el mejor resultado posible de Ete(%).
+
+gender: Independientemente en todas las combinaciones de alpha y beta siempre tiene un
+    numero de erroes = 0, por lo que se puede decir que sus datos son linealmente separables
+	y convergentes. Ademas, pasa un poco como en el caso de expressions, pero en este caso a mayor 
+	beta, surgen combinaciones con alpha que suelen empeorar en algunos casos de Ete(%).
+
+videos: En videos, pasa lo mismo que en gauss2D, los datos no son linealmente separables,
+    ya que siempre hay un numero de errores > 0, y el mejor caso es con un alpha = 0.1
+    y con un beta = 1.0.
