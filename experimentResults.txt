@@ -1,4 +1,9 @@
 Resultados despues de ejecutar experiment.py - EDWIN MAKOVEEV ROUTSKAIA · 3D1
+¿COMO ELEGIR LA MEJOR? -> FACIL, buscas que E=0, si no tiene un E=0 en ninguna combinacion de alpha y beta, 
+entoces no es covergente (no es lineaalmente separable), despues buscas el que tenga un menor Ete(%), en caso
+de empate, los que tengan un mayor beta y alpha (beta mas prioritario que alpha), lo de abajo lo hice en su
+dia sin sbaer esto, y el dia del examen cuando me entere que como se pillaba, no me dio tiempo a corregir, y 
+hacerlo bien todo.
 
 Mejores Resultados de cada conjunto de datos:
 #               a          b         E    k  Ete  Ete (%)    Ite (%)
